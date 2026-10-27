@@ -47,6 +47,9 @@ unless the user separately requests that action.
    the next decision, and a work-order link using verified IDs:
    `https://mason.enduring-labs.com/mason/<propertyManagerId>/work-order/<workOrderId>`.
    Include contact details or message excerpts only when needed for the audience.
+   If the user asks to save or schedule recurring delivery, use `mason-reports`
+   for that separately authorized workflow; do not save a subscription merely
+   to answer a one-time reporting question.
 
 Keep the report concise: the measured backlog, the few material blockers, and
 the decisions needed. If there is no evidence of an assigned owner or a next

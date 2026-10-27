@@ -1,25 +1,32 @@
 # Mason
 
-Mason helps property managers investigate maintenance work orders, prepare
-resident and vendor communications, and understand their maintenance backlog.
-This plugin pairs workflow skills with the remote Mason MCP connector. It
+Mason helps property managers investigate and manage maintenance, coordinate
+people and appointments, maintain policies, and understand their portfolio.
+This plugin pairs ten workflow skills with the remote Mason MCP connector. It
 requires an existing authorized Mason account and access to the property manager
 you select during OAuth consent.
 
 ## What you can ask
 
-- **Investigate an issue:** “Why is the kitchen sink repair at 123 Example Street
-  still open? Show the evidence and the next decision.”
-- **Prepare a communication:** “Draft an update to the resident about that
-  appointment. Don't send it.” When you ask to send or schedule a message, Mason
-  checks the current workflow, recipient context, and permissions.
-- **Review the portfolio:** “Summarize my open maintenance work orders and the
-  items that need attention.” Reports disclose their scope and missing data.
+| Workflow                 | Example request                                                              | Bundled skill              |
+| ------------------------ | ---------------------------------------------------------------------------- | -------------------------- |
+| Investigation            | “Why is the sink repair still open? Show the evidence.”                      | `mason-maintenance-triage` |
+| Work orders and projects | “Open work orders for these punch-list items and group them in a project.”   | `mason-work-orders`        |
+| Dispatch and estimates   | “Request an estimate from the vendor I named for this repair.”               | `mason-dispatch`           |
+| Appointments             | “Move this technician's visit to the agreed window on Friday.”               | `mason-scheduling`         |
+| Inspections              | “Check the inspection's access notes and explain what is still unconfirmed.” | `mason-inspections`        |
+| Vendors and technicians  | “Find our emergency plumbing vendors and show their saved restrictions.”     | `mason-vendors`            |
+| Policies and guidelines  | “Update our future troubleshooting guidance with this correction.”           | `mason-policies`           |
+| Communications           | “Draft a resident update about that appointment. Don't send it.”             | `mason-communications`     |
+| Portfolio summary        | “Summarize my open maintenance work and decisions needed.”                   | `mason-maintenance-digest` |
+| Recurring reports        | “Preview a weekly backlog report. Don't schedule delivery yet.”              | `mason-reports`            |
 
-The skills are `mason-maintenance-triage`, `mason-communications`, and
-`mason-maintenance-digest`. They guide tool selection and reporting; live Mason
-account policies remain available through the connector. The skills do not grant
-access or independently authorize actions.
+The bundle supplies discoverable workflows. Detailed PM and shared skills remain
+served by Mason through `get_mason_briefing`, `list_skills`, and `read_skill`,
+along with current account policies and tool schemas. The plugin retrieves those
+references when needed instead of shipping a copy of the internal skill library
+or customer configuration. The workflows do not grant access or independently
+authorize actions. Availability depends on your account and connection scopes.
 
 ## Connect your account
 

@@ -1,9 +1,9 @@
 {
   "name": "mason",
   "displayName": "Mason",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "LicenseRef-Mason-Plugin-1.0",
-  "description": "Investigate maintenance issues, prepare communications, and summarize your Mason portfolio with connected workflow skills.",
+  "description": "Manage Mason work orders, dispatch, scheduling, inspections, vendors, policies, communications, and reports with connected PM workflows.",
   "author": {
     "name": "Enduring Labs, Inc.",
     "email": "hello@thisismason.com",
