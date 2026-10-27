@@ -1,0 +1,19 @@
+{
+  "name": "mason",
+  "displayName": "Mason",
+  "version": "1.0.0",
+  "license": "LicenseRef-Mason-Plugin-1.0",
+  "description": "Investigate maintenance issues, prepare communications, and summarize your Mason portfolio with connected workflow skills.",
+  "author": {
+    "name": "Enduring Labs, Inc.",
+    "email": "hello@thisismason.com",
+    "url": "https://www.thisismason.com"
+  },
+  "homepage": "https://mason.enduring-labs.com/docs/mcp",
+  "keywords": ["property-management", "maintenance", "communications"],
+  "icon": "./assets/logo.svg",
+  "documentationUrl": "https://mason.enduring-labs.com/docs/mcp",
+  "supportUrl": "https://mason.enduring-labs.com/docs/mcp#support",
+  "privacyPolicyUrl": "https://mason.enduring-labs.com/docs/mcp/privacy",
+  "termsOfServiceUrl": "https://www.thisismason.com/legal/terms"
+}

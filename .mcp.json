@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "mason": {
+      "type": "http",
+      "url": "https://mason.enduring-labs.com/api/mcp"
+    }
+  }
+}
